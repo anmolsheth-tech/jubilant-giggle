@@ -195,3 +195,53 @@ nav ul li a.active {
 .shop-now {
   animation: float 3s ease-in-out infinite;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 4vw 6vw;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .content h2 {
+    font-size: clamp(24px, 5vw, 40px);
+  }
+
+  .content h2 span {
+    font-size: clamp(30px, 6vw, 50px);
+  }
+
+  .shop-now {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .model-img {
+    max-width: 90vw;
+    height: auto;
+    bottom: 5%;
+  }
+
+  .pagination {
+    right: 20px;
+    bottom: 30px;
+  }
+
+  .social-icons {
+    left: 10px;
+    bottom: 30px;
+  }
+
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+}
