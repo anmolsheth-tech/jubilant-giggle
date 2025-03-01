@@ -79,7 +79,7 @@ nav ul li a.active {
   justify-content: center;
   text-align: center;
   position: relative;
-  background: url("./images/bg1.jpg") no-repeat center center/cover;
+  background: url("images/DarkGradient.jpg") no-repeat center center/cover;
 }
 
 .hero .overlay {
