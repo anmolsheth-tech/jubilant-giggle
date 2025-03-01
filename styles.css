@@ -24,10 +24,6 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 15px 50px;
 }
 
 .logo {
@@ -61,34 +57,21 @@ nav ul li a.active {
   opacity: 1;
   border-bottom: 2px solid #d4af37;
 }
-nav ul li a:hover {
-  opacity: 1;
-  border-bottom: 2px solid #d4af37;
-  text-shadow: 0 0 8px #d4af37;
-}
-
 
 .login-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 10px 20px;
-  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 15px;
   transition: 0.3s;
 }
 
 .login-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: white;
   color: black;
 }
 
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -96,9 +79,7 @@ nav ul li a:hover {
   justify-content: center;
   text-align: center;
   position: relative;
-  background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2a2a2a, #171717);
-  background-size: 300% 300%; 
-  animation: gradientBG 6s linear infinite;
+  background: url("images/DarkGradient.jpg") no-repeat center center/cover;
 }
 
 .hero .overlay {
@@ -194,12 +175,13 @@ nav ul li a:hover {
 .social-icons a img {
   width: 40px; 
   height: 40px;
-  object-fit: contain;
+  object-fit: contain; 
   transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
 
 .shop-now:active {
   transform: scale(0.95);
@@ -208,5 +190,3 @@ nav ul li a:hover {
 .shop-now {
   animation: float 3s ease-in-out infinite;
 }
-
-
