@@ -236,3 +236,219 @@ nav ul li a.active {
     bottom: 4%;
   }
 }
+
+
+
+.store {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.store h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.buy-now {
+  background: #d4af37;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-now:hover {
+  background: #b8942c;
+}
+
+
+
+/* Men's Collection Section */
+.men-collection {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #101010;
+}
+
+.men-collection h1 {
+  font-size: clamp(28px, 4vw, 50px);
+  font-weight: bold;
+  color: #d4af37; /* Gold accent */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* Product Card */
+.product {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d4af37; /* Gold price */
+}
+
+/* Buy Now Button */
+.buy-now {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.buy-now:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* Fashion Tips Section */
+.fashion-tips {
+  text-align: center;
+  padding: 100px 5%;
+  background: url('images/tipsBG.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed; 
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fashion-tips h1 {
+  font-size: clamp(38px, 5vw, 65px);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #d4af37; /* Gold */
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 50px;
+  color: #ccc;
+}
+
+/* Tips Container */
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-adjusts */
+  gap: 30px;
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+
+
+/* Individual Tip */
+.tip {
+  background: rgba(255, 255, 255, 0.15); 
+  padding: 30px; 
+  border-radius: 15px; 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(15px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tip h2 {
+  font-size: 22px;
+  color: #d4af37; /* Gold */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.tip p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.tip:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .tips-container {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+}
+
+
