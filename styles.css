@@ -243,8 +243,8 @@ nav ul li a.active {
 .store {
   text-align: center;
   padding: 50px 20px;
-  overflow-y: auto;  /* Enables vertical scrolling */
-  max-height: 100vh;
+  overflow-y: auto;
+  min-height: 100vh;  /* Allows it to grow instead of restricting it */
 }
 
 .store h1 {
@@ -255,7 +255,7 @@ nav ul li a.active {
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-
+  overflow: visible;
   gap: 20px;
   max-width: 1200px;
   margin: auto;
