@@ -13,6 +13,9 @@ body {
   overflow-x: hidden;  /* Prevents horizontal scroll */
   overflow-y: auto; 
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Header */
 header {
@@ -267,6 +270,10 @@ nav ul li a.active {
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
+}
+.product:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
 }
 
 .product img {
@@ -534,4 +541,94 @@ nav ul li a.active {
   }
 }
 
+
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  color: #f5d76e; 
+  background: url('images/ContactsBG.jpg') no-repeat center center/cover;
+  background-size: cover;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #d4af37;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.contact-form button {
+  background: #d4af37;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #f5d76e;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
 
