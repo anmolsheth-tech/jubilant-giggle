@@ -10,7 +10,7 @@
 body {
   background: #171717;
   color: white;
-  overflow-x: hidden;  /* Prevents horizontal scroll */
+  overflow-x: hidden;  
   overflow-y: auto; 
 }
 html {
@@ -76,6 +76,7 @@ nav ul li a.active {
   background: white;
   color: black;
 }
+
 
 /* Hero Section */
 .hero {
