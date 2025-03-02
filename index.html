@@ -9,7 +9,8 @@
 <body>
 
     <header>
-        <div class="logo">SOL <span>FASHION</span></div>
+        <a href="index.html" class="logo">SOL <span>FASHION</span></a>
+
         <nav>
             <ul>
                 <li><a href="index.html" class="active">HOME</a></li>
@@ -39,4 +40,10 @@
 
 </body>
 </html>
-
+<script>
+    document.querySelector(".logo").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent any broken behavior
+        window.location.href = "index.html"; // Redirect manually
+    });
+    </script>
+    

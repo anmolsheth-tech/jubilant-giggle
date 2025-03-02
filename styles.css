@@ -312,8 +312,11 @@ nav ul li a.active {
 .men-collection {
   text-align: center;
   padding: 50px 20px;
-  background-color: #101010;
+  min-height: 100vh;
+  background: url('images/MenBG.jpg') no-repeat center center/cover;
+  background-size: cover;
 }
+
 
 .men-collection h1 {
   font-size: clamp(28px, 4vw, 50px);
@@ -632,3 +635,26 @@ nav ul li a.active {
   margin-bottom: 8px;
 }
 
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFD700; /* Gold color */
+  display: inline-block;
+  cursor: pointer; /* Ensures it looks clickable */
+}
+
+.logo span {
+  color: white; /* Adjust text contrast */
+}
+
+.logo:hover {
+  opacity: 0.8; /* Adds a slight hover effect */
+}
+
+@media (max-width: 768px) {
+  .logo {
+      font-size: 1.5rem; /* Adjust size for smaller screens */
+  }
+}
