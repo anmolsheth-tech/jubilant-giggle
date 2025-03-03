@@ -12,9 +12,13 @@ body {
   color: white;
   overflow-x: hidden;  
   overflow-y: auto; 
+  margin: 0;
+  padding: 0;
 }
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
@@ -23,11 +27,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: clamp(10px, 2vw, 20px) clamp(20px, 5vw, 50px);
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
+  background: black;
 }
 
 .logo {
@@ -80,6 +85,8 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
+  margin-top: 0; /* Removes any unintended spacing */
+  padding-top: clamp(60px, 10vh, 100px);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -252,8 +259,9 @@ nav ul li a.active {
 }
 
 .store h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 20px;
+  color: #d4af37;
 }
 
 .products {
@@ -702,4 +710,14 @@ nav ul li a:hover {
 /* Adjust body padding so content doesn’t overlap the fixed navbar */
 body {
   padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
 }
